@@ -1,0 +1,4 @@
+name: IronNetwork
+version: '${project.version}'
+main: com.envyus.ironnetwork.IronNetwork
+api-version: '1.20'
