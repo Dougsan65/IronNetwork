@@ -3,6 +3,8 @@ package com.envyus.ironnetwork;
 import com.envyus.ironnetwork.Listeners.*;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
+
+
 import java.util.Objects;
 
 public final class IronNetwork extends JavaPlugin implements Listener {
@@ -16,8 +18,7 @@ public final class IronNetwork extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(new BlockBreakEvent(), this);
         getServer().getPluginManager().registerEvents(new PlayerBedLeave(), this);
 
-        System.out.println("Plugin Enabled");
-
+        getServer().getConsoleSender().sendMessage("§bThe §cIron Network §bPLugin was Enabled!!");
 
     }
 }
