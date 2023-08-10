@@ -12,10 +12,7 @@ public class PlayerBedLeave implements Listener {
     public void onPlayerLeaves(PlayerBedLeaveEvent e){
         Player player = e.getPlayer();
         World world = player.getWorld();
-
         world.setTime(1000);
-
-
         world.setStorm(true);
         Biome biome = player.getWorld().getBiome(player.getLocation());
 
@@ -28,5 +25,4 @@ public class PlayerBedLeave implements Listener {
 
         }
     }
-
 }

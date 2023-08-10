@@ -21,7 +21,5 @@ public class SheepShearEvent implements Listener {
             player.sendMessage("Pode tirar a vontade, não é uma ovelha mesmo");
 
         }
-
     }
-
 }

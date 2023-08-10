@@ -1,5 +1,6 @@
 package com.envyus.ironnetwork.Listeners;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -11,13 +12,13 @@ public class JoinLeaveEvent implements Listener {
     public void onPlayerJoin(PlayerJoinEvent e){
         Player player = e.getPlayer();
 
-        e.setJoinMessage("§b§l"+ player.getDisplayName() + " §c§lJoin the game, what a pleasure.");
+        e.setJoinMessage(ChatColor.YELLOW + "" + ChatColor.BOLD +  player.getDisplayName() + ChatColor.RED + " Joins the game, what a pleasure.");
     }
     @EventHandler
     public void onPlayerLeave(PlayerQuitEvent e){
         Player player = e.getPlayer();
 
-        e.setQuitMessage("§b§l" + player.getDisplayName() + " §c§lQuits the game, what a coward.");
+        e.setQuitMessage(ChatColor.YELLOW + "" + ChatColor.BOLD +  player.getDisplayName() + ChatColor.RED + " Quits the game, what a coward.");
     }
 
 }
